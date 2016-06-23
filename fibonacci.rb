@@ -4,7 +4,7 @@ class Fibonacci
   def initialize
     @first = 1
     @second = 1
-    @next_ = @first + @second
+    @next = @first + @second
   end
 
   def fib(n)
@@ -12,9 +12,9 @@ class Fibonacci
     elsif n > 1 || n < 0
       print '0 1 1 '
       (3..n).each do
-        @next_ = @first + @second
+        @next = @first + @second
         @first = @second
-        @second = @next_
+        @second = @next
         print "#{@second} "
       end
       puts "\n" + "F(#{n}) = #{@second}"
@@ -22,4 +22,4 @@ class Fibonacci
   end
 end
 fibonaci = Fibonacci.new
-fibonaci.fib(10)
+fibonaci.fib(6)
