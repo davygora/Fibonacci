@@ -1,6 +1,8 @@
 # Fibonacci F(n) = 0, 1, 1, 2, 3, 5, 8, 13, 21, 34...
 class Fibonacci
 
+  attr_reader :first,:second
+
   def initialize
     @first = 1
     @second = 1
@@ -21,5 +23,3 @@ class Fibonacci
     end
   end
 end
-fibonaci = Fibonacci.new
-fibonaci.fib(6)
